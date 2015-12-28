@@ -10,7 +10,8 @@ object Hmmm {
     ExplainCode.entryPoints = List(
       ApplyConstructor,
       CopyConstructor,
-      ValueBasedExample
+      ValueBasedExample,
+      GuardExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
