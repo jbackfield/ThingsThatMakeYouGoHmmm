@@ -2,6 +2,7 @@ package com.backfield.things.scala
 
 import com.backfield.explain.ExplainCode
 import com.backfield.things.scala.caseclasses._
+import com.backfield.things.scala.implicits._
 import com.backfield.things.scala.patternmatching._
 
 object Hmmm {
@@ -12,7 +13,8 @@ object Hmmm {
       CopyConstructor,
       ValueBasedExample,
       GuardExample,
-      PartialFunctionExample
+      PartialFunctionExample,
+      ImplicitParameters
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
