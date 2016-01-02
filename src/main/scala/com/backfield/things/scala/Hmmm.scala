@@ -11,7 +11,8 @@ object Hmmm {
       ApplyConstructor,
       CopyConstructor,
       ValueBasedExample,
-      GuardExample
+      GuardExample,
+      PartialFunctionExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
