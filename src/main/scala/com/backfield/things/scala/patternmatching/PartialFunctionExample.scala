@@ -59,6 +59,16 @@ object PartialFunctionExample extends Example {
           },
           ec
         )
+        ExplainCode.pause
+        println("We can also lift the PartialFunction into a function itself")
+        ExplainCode.explain[(TestCaseClass => Option[Int])](pf.lift, (f : TestCaseClass => Option[Int]) => {
+          ExplainCode.explain[Option[Int]](f(new TestCaseClass("Bar", 1234)), (res : Option[Int]) => {
+            println(s"Since the partial function exists at that value, we get $res")
+          }, ec)
+          ExplainCode.explain[Option[Int]](f.apply(new TestCaseClass("Foo", 5678)), (res : Option[Int]) => {
+            println(s"Since the partial function does not exist at that value we got $res")
+          }, ec)
+        }, ec)
       }, ec)
     done = true
   }
