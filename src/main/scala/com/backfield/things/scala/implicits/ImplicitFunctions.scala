@@ -30,7 +30,7 @@ object ImplicitFunctions extends Example {
       },
       ec
     )
-    println("Now we define a class")
+    println("Now let's define a class")
     ExplainCode.explain[Boolean]("class Foo(str : String) {\n" +
       "  def asException = new Exception(str)\n" +
       "}",
