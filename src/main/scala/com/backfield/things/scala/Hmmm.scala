@@ -14,7 +14,8 @@ object Hmmm {
       ValueBasedExample,
       GuardExample,
       PartialFunctionExample,
-      ImplicitParameters
+      ImplicitParameters,
+      ImplicitFunctions
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }

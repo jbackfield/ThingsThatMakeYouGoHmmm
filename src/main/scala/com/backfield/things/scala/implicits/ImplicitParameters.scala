@@ -10,8 +10,6 @@ object ImplicitParameters extends Example {
 
   val ec = ExplainCode()
 
-  def f(implicit in : String) : Int = in.length
-
   override def execute(): Unit = {
     println("Let's define a function that has an implicit parameter")
     ExplainCode.explain[Boolean]("def f(implicit in : String) : Int = in.length", true, (_ : Boolean) => {
