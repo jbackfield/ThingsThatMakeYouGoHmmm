@@ -3,6 +3,7 @@ package com.backfield.things.scala
 import com.backfield.explain.ExplainCode
 import com.backfield.things.scala.caseclasses._
 import com.backfield.things.scala.implicits._
+import com.backfield.things.scala.parameters._
 import com.backfield.things.scala.patternmatching._
 
 object Hmmm {
@@ -16,7 +17,9 @@ object Hmmm {
       PartialFunctionExample,
       ImplicitParameters,
       ImplicitFunctions,
-      ImplicitClass
+      ImplicitClass,
+      MultiParameterFunctionExample,
+      FunctionCurryingExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
