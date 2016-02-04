@@ -11,8 +11,6 @@ object CakePatternExample extends Example {
   val ec = ExplainCode()
 
   override def execute(): Unit = {
-    println("Typesafe dependency injection")
-    ExplainCode.pause
     println("We'll start with a model class User")
     ExplainCode.explain[Boolean]("case class User(id : Long, fname : String, lname : String) {}", true, (_:Boolean) => {
       case class User(id : Long, fname : String, lname : String) {}
