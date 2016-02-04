@@ -1,6 +1,7 @@
 package com.backfield.things.scala
 
 import com.backfield.explain.ExplainCode
+import com.backfield.things.scala.cake.CakePatternExample
 import com.backfield.things.scala.caseclasses._
 import com.backfield.things.scala.implicits._
 import com.backfield.things.scala.parameters._
@@ -22,7 +23,8 @@ object Hmmm {
       MultiParameterFunctionExample,
       FunctionCurryingExample,
       CovariantReturnTypeExample,
-      CovariantGenericTypeExample
+      CovariantGenericTypeExample,
+      CakePatternExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
