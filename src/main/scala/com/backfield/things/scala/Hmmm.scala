@@ -1,12 +1,13 @@
 package com.backfield.things.scala
 
 import com.backfield.explain.ExplainCode
-import com.backfield.things.scala.cake.CakePatternExample
+import com.backfield.things.scala.cake._
 import com.backfield.things.scala.caseclasses._
 import com.backfield.things.scala.implicits._
 import com.backfield.things.scala.parameters._
 import com.backfield.things.scala.patternmatching._
-import com.backfield.things.scala.structuraltyping.StructuralTypingExample
+import com.backfield.things.scala.streams._
+import com.backfield.things.scala.structuraltyping._
 import com.backfield.things.scala.variance._
 
 object Hmmm {
@@ -26,7 +27,9 @@ object Hmmm {
       CovariantReturnTypeExample,
       CovariantGenericTypeExample,
       CakePatternExample,
-      StructuralTypingExample
+      StructuralTypingExample,
+      StreamCreationExample,
+      StreamConsumeExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
