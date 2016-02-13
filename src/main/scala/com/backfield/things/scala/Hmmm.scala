@@ -29,7 +29,8 @@ object Hmmm {
       CakePatternExample,
       StructuralTypingExample,
       StreamCreationExample,
-      StreamConsumeExample
+      StreamConsumeExample,
+      StreamEndExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }
