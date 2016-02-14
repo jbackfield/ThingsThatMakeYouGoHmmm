@@ -56,6 +56,7 @@ object StreamEndExample extends Example {
       stream.foreach(println)
       println("Notice that we've ended the stream based on when there is nothing left in the buffered reader")
     }, ec)
+    this.done = true
   }
 
 }

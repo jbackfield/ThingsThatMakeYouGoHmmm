@@ -28,7 +28,7 @@ object CovariantReturnTypeExample extends Example {
         class MyClass extends MyTrait { override def myMethod() : String = "Foo Bar" }
       }, ec)
     }, ec)
-    done = true
+    this.done = true
   }
 
 }

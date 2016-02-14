@@ -97,6 +97,7 @@ object IntroToContinuationsExample extends Example {
       println(s"Which is the equivalent of ((2*((2*(7*2))+1)*2)+1) = $result")
     }, ec)
 
+    this.done = true
   }
 
 }

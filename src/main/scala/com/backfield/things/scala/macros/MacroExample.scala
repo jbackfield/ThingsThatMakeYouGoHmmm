@@ -21,6 +21,7 @@ object MacroExample extends Example {
         }, ec)
       }, ec)
     }, ec)
+    this.done = true
   }
 
 }

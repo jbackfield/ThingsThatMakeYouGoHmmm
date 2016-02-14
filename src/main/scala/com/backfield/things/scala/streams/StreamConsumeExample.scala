@@ -33,6 +33,7 @@ object StreamConsumeExample extends Example {
         println("Or stream.foreach")
       }, ec)
     }, ec)
+    this.done = true
   }
 
 }

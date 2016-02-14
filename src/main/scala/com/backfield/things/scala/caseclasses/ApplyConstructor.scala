@@ -20,7 +20,7 @@ object ApplyConstructor extends Example {
       },
       ec)
     }, ec)
-    done = true
+    this.done = true
   }
 
 }

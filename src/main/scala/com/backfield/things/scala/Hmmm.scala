@@ -4,6 +4,7 @@ import com.backfield.explain.ExplainCode
 import com.backfield.things.scala.cake._
 import com.backfield.things.scala.caseclasses._
 import com.backfield.things.scala.continuations._
+import com.backfield.things.scala.dynamics._
 import com.backfield.things.scala.implicits._
 import com.backfield.things.scala.macros._
 import com.backfield.things.scala.parameters._
@@ -33,8 +34,9 @@ object Hmmm {
       StreamCreationExample,
       StreamConsumeExample,
       StreamEndExample,
-      MacroExample,
-      IntroToContinuationsExample
+      SelectDynamicExample,
+      IntroToContinuationsExample,
+      MacroExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
   }

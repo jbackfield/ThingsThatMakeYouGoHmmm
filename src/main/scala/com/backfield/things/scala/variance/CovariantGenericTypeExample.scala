@@ -38,7 +38,7 @@ object CovariantGenericTypeExample extends Example {
           println("error: incompatible types: List<String> cannot be converted to List<CharSequence>")
         }, ec)
 
-    done = true
+    this.done = true
   }
 
 

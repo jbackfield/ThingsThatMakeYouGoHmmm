@@ -54,7 +54,7 @@ object ValueBasedExample extends Example {
           println(s"We match and it doesn't matter at all what field1, only that field2 was 1234: '$res'")
       }, ec)
     }, ec)
-    done = true
+    this.done = true
   }
 
 }

@@ -41,7 +41,7 @@ object MultiParameterFunctionExample extends Example {
         }, ec)
       }, ec)
     }, ec)
-    done = true
+    this.done = true
   }
 
 }

@@ -31,6 +31,7 @@ object StreamCreationExample extends Example {
         }, ec)
       }, ec)
     }, ec)
+    this.done = true
   }
 
 }

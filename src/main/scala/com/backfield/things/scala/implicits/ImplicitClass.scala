@@ -31,7 +31,7 @@ object ImplicitClass extends Example {
       },
       ec
     )
-    done = true
+    this.done = true
   }
 
 }

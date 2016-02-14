@@ -44,7 +44,7 @@ object GuardExample extends Example {
       }, ec)
     }, ec)
 
-    done = true
+    this.done = true
   }
 
 }

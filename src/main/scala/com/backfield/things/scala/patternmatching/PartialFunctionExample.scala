@@ -70,7 +70,7 @@ object PartialFunctionExample extends Example {
           }, ec)
         }, ec)
       }, ec)
-    done = true
+    this.done = true
   }
 
 }

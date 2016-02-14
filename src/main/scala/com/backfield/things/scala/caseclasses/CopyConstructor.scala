@@ -23,7 +23,7 @@ object CopyConstructor extends Example {
         println(s"Both fields changed: $changed")
       }, ec)
     }, ec)
-    done = true
+    this.done = true
   }
 
 }
