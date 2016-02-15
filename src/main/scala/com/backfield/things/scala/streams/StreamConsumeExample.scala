@@ -31,6 +31,7 @@ object StreamConsumeExample extends Example {
         println("stream.toList will never return because it has no ending.")
         println("Neither would stream.map(x => x * 2).toList")
         println("Or stream.foreach")
+        println("If you do want a never ending stream, convert it to an iterator first")
       }, ec)
     }, ec)
     this.done = true
