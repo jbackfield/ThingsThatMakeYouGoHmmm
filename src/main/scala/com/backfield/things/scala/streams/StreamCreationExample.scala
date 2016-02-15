@@ -11,7 +11,7 @@ object StreamCreationExample extends Example {
   val ec = ExplainCode()
 
   override def execute(): Unit = {
-    ExplainCode.explain[Stream[Int]]("val 1 #:: 2 #:: 3 #:: Stream.Empty", 1 #:: 2 #:: 3 #:: Stream.Empty, (stream : Stream[Int]) => {
+    ExplainCode.explain[Stream[Int]]("val stream = 1 #:: 2 #:: 3 #:: Stream.empty", 1 #:: 2 #:: 3 #:: Stream.empty, (stream : Stream[Int]) => {
       println(s"We now have a stream $stream")
       ExplainCode.explain[String](stream.mkString(","), (str : String) => {
         println(s"This results in a comma delimited string $str")

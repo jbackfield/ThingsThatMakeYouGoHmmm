@@ -46,6 +46,7 @@ object ApplyDynamicExample extends Example {
         }, ec)
       }, ec)
     }, ec)
+    this.done = true
   }
 
 }
