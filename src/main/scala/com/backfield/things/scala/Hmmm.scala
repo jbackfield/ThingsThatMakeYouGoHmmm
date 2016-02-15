@@ -29,6 +29,7 @@ object Hmmm {
       FunctionCurryingExample,
       CovariantReturnTypeExample,
       CovariantGenericTypeExample,
+      ContravariantGenericTypeExample,
       CakePatternExample,
       StructuralTypingExample,
       StreamCreationExample,
