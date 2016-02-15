@@ -38,6 +38,7 @@ object Hmmm {
       UpdateDynamicExample,
       ApplyDynamicExample,
       IntroToContinuationsExample,
+      ContinuationPassingExample,
       MacroExample
     )
     println(s"You executed ${Console.RED}${ExplainCode.iterate().length}${Console.RESET} commands")
