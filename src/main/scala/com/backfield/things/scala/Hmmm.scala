@@ -35,6 +35,8 @@ object Hmmm {
       StreamConsumeExample,
       StreamEndExample,
       SelectDynamicExample,
+      UpdateDynamicExample,
+      ApplyDynamicExample,
       IntroToContinuationsExample,
       MacroExample
     )
