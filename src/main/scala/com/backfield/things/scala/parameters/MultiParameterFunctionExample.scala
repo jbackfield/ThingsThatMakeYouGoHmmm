@@ -28,14 +28,14 @@ object MultiParameterFunctionExample extends Example {
     ExplainCode.pause
     println("Remember though, we can make a parameter set implicit?  Let's create an implicit step size calculator")
     ExplainCode.explain[Boolean]("def steps(count : Int)(implicit size : Int) : Int = count * size", true, (_ : Boolean) => {
-      def increment(count : Int)(implicit size : Int) : Int = count * size
+      def steps(count : Int)(implicit size : Int) : Int = count * size
       println("We create our implicit variable to be used as the step size")
-      ExplainCode.explain[Int]("implicit var s = 5", 5, (i : Int) => {
+      ExplainCode.explain[Int]("implicit val s = 5", 5, (i : Int) => {
         implicit var s = i
         println("And we can now calculate, based on the count of steps, how large the step size is")
-        ExplainCode.explain[Int]("increment(10)", increment(10), (_ : Int) => {
+        ExplainCode.explain[Int]("steps(10)", steps(10), (_ : Int) => {
           println("But let's be sure that it's being expanded")
-          ExplainCode.explain[Int](increment(10), (result : Int) => {
+          ExplainCode.explain[Int](steps(10), (result : Int) => {
             println(s"And our size of the steps is $result")
           }, ec)
         }, ec)
