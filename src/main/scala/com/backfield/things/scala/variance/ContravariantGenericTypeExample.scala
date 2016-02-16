@@ -26,6 +26,7 @@ object ContravariantGenericTypeExample extends Example {
     ExplainCode.explain[Boolean]("class Foo[-A](val value : A)", true, (_ : Boolean) => {
       println("Doesn't work: contravariant type A occurs in covariant position in type => A of value value")
     }, ec)
+    this.done = true
   }
 
 }
