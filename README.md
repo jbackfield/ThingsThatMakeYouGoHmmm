@@ -1,4 +1,4 @@
-# ThingsThatMakeYouGoHmmm
+# Things That Make You Go Hmmm
 Advanced Scala
 
 ## Requirements
