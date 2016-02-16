@@ -22,7 +22,7 @@ object IntroToContinuationsExample extends Example {
     } * 2, (result : Int) => {
       println(s"Which is the equivalent of (((7+1)+1)+1)*2 = $result")
     }, ec)
-
+    ExplainCode.pause
     ExplainCode.explain[Int]("def foo() = {\n" +
       "    1 + shift { k : (Int=>Int) =>\n" +
       "        k(k(k(7)))\n" +
@@ -48,7 +48,7 @@ object IntroToContinuationsExample extends Example {
       }, (result : Int) => {
       println(s"Which is the equivalent of ((((((7+1)*2)+1)*2)+1)*2) = $result")
     }, ec)
-
+    ExplainCode.pause
     ExplainCode.explain[Int]("def foo() = {\n" +
       "    shift { k : (Int=>Int) =>\n" +
       "        k(k(7))\n" +
@@ -64,7 +64,7 @@ object IntroToContinuationsExample extends Example {
     }, (result : Int) => {
       println(s"Which is the equivalent of ((((7+1)*2*2)+1)*2*2) = $result")
     }, ec)
-
+    ExplainCode.pause
     ExplainCode.explain[Int]("def foo() = {\n" +
       "    shift { k : (Int=>Int) =>\n" +
       "        k(k(7))\n" +
@@ -80,7 +80,7 @@ object IntroToContinuationsExample extends Example {
     }, (result : Int) => {
       println(s"Which is the equivalent of (((7*2)+1)*2)+1 = $result")
     }, ec)
-
+    ExplainCode.pause
     ExplainCode.explain[Int]("def foo() = {\n" +
       "    shift { k : (Int=>Int) =>\n" +
       "        k(k(7))\n" +

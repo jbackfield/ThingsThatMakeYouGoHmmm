@@ -38,6 +38,7 @@ object ContinuationPassingExample extends Example {
           println(s"in: ${res._1}, rand: ${res._2}, step: ${res._3}")
         }, ec)
       }, ec)
+      ExplainCode.pause
       println("We can create another one and store it back into cont as well")
       ExplainCode.explain[Boolean]("reset {\n" +
         "    val rand = Random.nextInt(10)\n" +
